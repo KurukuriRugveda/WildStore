@@ -21,7 +21,7 @@ export default function Navbar() {
     return (
         <header style={{ position: 'sticky', top: 0, zIndex: 100, background: 'white', borderBottom: '1px solid #f0f0f0', boxShadow: '0 2px 10px rgba(0,0,0,0.05)' }}>
             <div className="container" style={{ display: 'flex', alignItems: 'center', height: 64, gap: 24 }}>
-                <Link to="/" style={{ fontFamily: 'Playfair Display, serif', fontSize: 26, fontWeight: 700, letterSpacing: -0.5 }}>WildStore</Link>
+                <Link to="/" style={{ fontFamily: 'Playfair Display, serif', fontSize: 26, fontWeight: 700, letterSpacing: -0.5 ,textDecoration:'none'}}>WildStore</Link>
                 <nav style={{ display: 'flex', gap: 28, flex: 1, justifyContent: 'center', flexWrap: 'wrap' }}>
                     {['/', '/shop', '/shop?category=Dresses', '/shop?category=Tops', '/shop?category=Shoes', '/shop?category=Accessories'].map((path, i) => (
                         <Link key={i} to={path} style={{ fontSize: 13, fontWeight: 500, color: '#333', textTransform: 'uppercase', letterSpacing: 0.8, transition: 'color 0.2s' }}
